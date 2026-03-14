@@ -1,0 +1,13 @@
+1. This is a review of the manuscript "A study on energy conservation.." by Butch, Ahmadzada, Pawelwek, and Chung. I recommend major revisions.
+
+2. The title and abstract need revisions as shown in the markup. The word choice and many of the sentences do not make sense as written.
+
+3. Introduction - The ms alludes to factors which would cause energy to appear to be lost; these are not minor experimental errors that would be taken care of with replicates and randomization, however; they would be systematic deficits that would then need to be carefully identified as to what was causing them.
+
+4. Methods and materials - There are items missing. The figure is too large and poorly drawn. It is not clear why F vs x only has 2 replicates. The software used to do the statistics is absent and no code is provided.
+
+5. Results - results require some sort of bar graph or summary statistics of the different energy pieces. The area under F vs x is not given.
+
+6. Discussion - If the authors are proposing that the reason energy is less is because other mechanisms took some of the energy, they need to provide some sort of calculation or basis for whether these mechanisms could account for the right value / right amount consistent with what is missing.
+
+7. The MS is deficient on references. 
