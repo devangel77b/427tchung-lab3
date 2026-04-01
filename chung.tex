@@ -1,7 +1,7 @@
-%\documentclass[reprint,amsmath,amssymb,aps,twoside]{revtex4-2} % for editor use only
+\documentclass[reprint,amsmath,amssymb,aps,twoside]{revtex4-2} % for editor use only
 
 % For initial submission use these lines
-\documentclass[amsmath,amssymb,aps,endfloats,linenumbers]{revtex4-2}
+%\documentclass[amsmath,amssymb,aps,endfloats,linenumbers]{revtex4-2}
 
 
 
@@ -24,11 +24,9 @@
 
 
 
-% set PDF metadata
-% AUTHORS EDIT THIS PART
 \hypersetup{%
-pdftitle={She loves you, yeah, yeah, yeah}, % full title here
-pdfauthor={John Lennon, Paul McCartney, George Harrison, and Ringo Starr}, % full author list here
+pdftitle={Non-conservation of mechanical engery in spring-launching toy poppers}, 
+pdfauthor={Matthew Butch, Omar Ahmadzada, Jacob Pawelek, and Timothy Chung}, 
 }
 
 
@@ -36,11 +34,8 @@ pdfauthor={John Lennon, Paul McCartney, George Harrison, and Ringo Starr}, % ful
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[RE,RO]{J S\&E \textbf{2}, xx--xx (2026)} % FOR EDITOR ONLY
-\fancyhead[LO]{Lennon \emph{et al}} % if many authors
-%\fancyhead[LO]{John and Dee} % if short enough to list all authors
-\fancyhead[LE]{She loves you, yeah, yeah, yeah} % full or short title depending on what fits
-%\fancyhead[LE}{Several species of small furry animals gathered together in a cave and grooving with a pict} % might be too long
-%\fancyhead[LE]{Several species grooving} % might be a short version of the title that fits
+\fancyhead[LO]{Chung \emph{et al}} % if many authors
+\fancyhead[LE]{Non-conservation of mechanical energy in poppers} 
 \fancyfoot[C]{\thepage}
 \fancypagestyle{mytitlepage}{
 \fancyhf{}
@@ -53,136 +48,151 @@ pdfauthor={John Lennon, Paul McCartney, George Harrison, and Ringo Starr}, % ful
 %\setcounter{page}{67} % FOR EDITOR USE ONLY
 %\linenumbers % FOR EDITOR USE ONLY
 
-% AUTHORS EDIT THIS PART
-\title{She loves you, yeah, yeah, yeah}
-\author{John Lennon}
-\altaffiliation{Manalapan High School} % use for non S&E authors
-\author{Paul McCartney}
-\author{George Harrison}
-\author{Ringo Starr}
-\email{Contact author: 420rstarr@frhsd.com} % use FRHSD address
-% For S&E authors
+\title{Non-conservation of mechanical energy in spring-launching toy poppers}
+\author{Matthew Butch}
+\author{Omar Ahmadzada}
+\author{Jacob Pawelek}
+\author{Timothy Chung}
+\email{Contact author: 427tchungr@frhsd.com}
 \affiliation{Science \& Engineering Magnet Program, \href{https://manalapan.frhsd.com/}{Manalapan High School}, Englishtown, NJ 07726 USA}
 \date{\today}
 
-
-% AUTHORS PUT YOUR MANUSCRIPT IN BELOW HERE
 \begin{abstract}
-The abstract should be one paragraph only and normally has no references. It is the second thing people read after your title and may be the only thing they read if it fails in its job. It should give an overview of the work done and what the findings were. 
+The law of conservation of mechanical energy states that, in an isolated system, mechanical energy remains constant as energy transforms between its kinetic and potential form without loss. This experiment investigates if energy is conserved in a \qty{0.0055}{\kilo\gram} spring-launching toy popper. When compressed, the toy stores elastic potential energy that is then converted to kinetic energy as the toy is released. The kinetic energy is then converted to gravitational potential energy as the toy ascends. A two-tailed paired $t$-test comparing the initial kinetic energy and gravitational potential energy at maximum height across ten repeated trials of the same popper yielded a statistically significant difference from zero. This result appears to suggest that mechanical energy was not fully conserved, but a more likely explanation is that we did not account for the presence of non-conservative forces such as air resistance during launch.
 \end{abstract}
-
-% For revtex format this will not print on the article page but will be used in setting 
-% the journal metadata so include keywords. Lowercase unless they are acronyms or proper nouns
-% and pick keywords that will actually help people find your work properly. 
-\keywords{kinematics, pop, time series}
+\keywords{conservation of energy, mechanical energy, kinetic energy, potential energy, popper}
 
 \maketitle\thispagestyle{mytitlepage}
+
+
+
+
+
 
 %The current column width is \the\columnwidth
 
 \section{Introduction}
-The introduction should work from broad to specific. Give major important background information or set up the major concepts to be used or tested. Set up the key research questions or hypotheses to tested. Optionally, give top level overview of method to be used. 
-
-This section also acts as a literature review of other important work in the field and relevant to the questions at hand. An example of how to cite something is here \cite{tipler}. Here is another example \cite{openstax}. The actual citation data is provided in the file \texttt{example.bib} which you should also look at. Two more examples are \cite{rombauer:1931:joy, binzel:1988:hemispherical}. Please do not type in your references to try to force them to be MLA or whatever format as these are not the right formats for a physics paper; \LaTeX\ and \texttt{bibtex} know how to do the necesary formatting. Typing in your references in some other format will make more work for the editors and they will be grumpy. If you absolutely cannot figure out how to do references, pick a consistent label name for each reference to use, and the editor may help you out. 
-
-Equations are appropriate here if needed; symbols should be consistent throughout the paper. An example equation is:
+The energy of motion, first introduced to describe the collision of two moving objects, is known as kinetic energy \cite{tipler,barrons,openstax}. This directionless, or scalar, quantity, is expressed in terms of mass $m$ and velocity $v$ and is given by
 \begin{equation}
-\sum \vec{F} = m \vec{a}.
-\label{eq:fma} % example label for use with cleveref
+%KE=1/2mv^2 (Eq. 1)
+KE = \frac{1}{2} m v^2.
+\label{eq:1}
 \end{equation}
-Equations receive punctuation; a period at the end is appropriate if it is the end of a sentence, or a comma if there is more to follow such as explanation of the symbols. Two ways to explain the symbols used are a list of symbols, or to explain them in the text. For the preceeding example in \cref{eq:fma}, $m$ is the mass in \unit{\kilo\gram}, while $\vec{a}$ is the acceleration in \unit{\meter\per\second}. J S\&E uses the \LaTeX\ \texttt{siunitx} package to format units consistently. Please do not type in your units manually, use the macros. Typing in your units manually will make more work for the editors and they will be grumpy. If you absolutely cannot figure out units or equations, write something simple with no formatting (F=ma here) and the editor may help you out. 
+The energy associated with an object’s position within a conservative force field is known as its potential energy, which is given by the negative of the work exerted by the a force, or
+\begin{equation}
+%PE=-integral(f*dr) (Eq. 2)
+PE = -\int \vec{F}\cdot d\vec{r}.
+\label{eq:2}
+\end{equation}
+The gravitational force exerted on objects near Earth’s surface has a downward direction with a magnitude of $mg$. Here, we’ll assume that upward vertical displacement $y$ is positive, so total displacement comes from initial point $y=0$ to final position $y=h$. We use this information to calculate the gravitational potential energy of an object, given by
+\begin{equation}
+GPE = - \int_0^h (-mg) dy,
+\label{eq:3}
+\end{equation}    
+which evaluates to
+\begin{equation}
+GPE = mgh. 
+\label{eq:4}
+\end{equation}
 
-Remember in science we do not ``prove'' hypotheses, we can disprove alternatives by falsifying them, and that any hypotheses we propose must be testable (as in there must be a way to show it was wrong). At the end of the introduction you normally introduce the research question your are out to answer and set up the testable hypotheses you will test in this article. 
+A system’s total mechanical energy $E$ is given by the sum of its kinetic energy and potential energy. The law of energy conservation states that this sum will remain constant unless external forces do work on the system \cite{tipler,barrons,openstax}. Based on this law, we set up a vertical launch system where energy changes between different forms as some object rises against gravity. In this system, the initial kinetic energy of an object as it rises should be equivalent to its potential energy at the time the object reaches its maximum height and comes to a brief rest. Realistically, mechanical energy may not appear fully conserved in this system due to systemic deficits like air resistance and energy dissipation into heat and sound which may be unaccounted for. These factors arise since air molecules apply negative work on the system and the popper is not perfectly elastic \cite{collegephysics}. 
 
-For initial submission it is common to set the paper to print doublespaced and with line numbers. Do not remove these it makes it easier for reviewers to comment. After initial review, the editor may switch it over to look like a preprint to aid in final formatting. Do not do this yourself! 
-
-
-
-
-
-
-\section{Methods and materials}
-Provide all methods and materials in a form that is replicable by a competent scientist or engineer. This section is normally written in past tense, e.g. ``We used an Easy Bake Oven (Hasbro; Pawtucket, RI) to evaporate plutonium samples to complete dryness...'' Key pieces of equipment or key reagents and materials should be listed with a source where they were obtained from. 
-
-\textbf{Do not include results in your methods.} The methods tell other scientists how to replicate what you did. \textbf{Do not provide a laundry list or recipe of steps like you copied from a lab handout or an AI; these will be rejected.} 
-
-It is appropriate to put links to code or datasets; put long items in an appendix or provide online.  For example, all code used to generate this example is provided at \url{https://github.com/devangel77b/jse-mechanics-template/}. 
-
-
-\subsection{Use of subsections}
-Consider breaking the methods into subsections, either for different major methods or parts of the experiment. Alternatively you could break it down into subsections based on things like: experimental subjects; drop testing; statistical analyses, etc. Major models or equations are appropriate here if they explain how you are handling your data. 
-
-
-
+While these system energy losses cannot be accounted for with replication, we took ten trials of the same popper and evaluated the difference between energies in each trial. We establish the following:
+%H0: the mean difference will be zero, consistent with energy conservation (mu d = 0)
+%Ha: the mean difference will not be zero, inconsistent with energy conservation (mu d !=0)    
 
 
-        
+
+
+
+
+
+    
+
+\section{Methods and materials}\label{sec:methods}
+
+To begin our investigation on energy conservation, we first measured the mass of a single toy popper (Liberty Imports, USA) to be \qty{0.0055}{\kilo\gram} using a balance scale (Arboleaf, Model CK10l). Then, we stacked two meter sticks and pinned them against a wall so that we could properly measure up to two meters high. We also set up an iPhone 13 (Apple Inc; Cupertino, CA) parallel to the rulers to record our experimentation at 60FPS. We began collecting data by compressing the toy roughly \qty{0.025}{\meter}, as further compression would result in the toy snapping through, and then releasing it. After, we replayed the video to capture the greatest height of the toy and enter it into a table. This process was repeated for ten trials to account for random variation.
+
+We also collected data for the force applied on the toy as its compression displacement increased. First, we placed a toy onto a balance and then compressed the toy in increments of \qty{0.005}{\meter}, up until the displacement is \qty{0.035}{\meter}. We chose this displacement amount since it would allow us to visualize the drop in force applied on the toy after the snap-through region of the toy is passed. This process was repeated twice because the force-displacement relationship in the popper is relatively consistent and not subject to random variation. For each trial, the mass displayed on the balance would be converted to Newtons and recorded in a force-displacement table.
+
+We used \cref{eq:4} to calculate the gravitational potential energy at the peak height of the toy in each of our ten trials. We calculated the launch kinetic energy (LKE) across each ten trials by taking the data from our force-displacement table and creating a force-displacement function, for which we calculated the area under the curve up to the toy’s snap-through region. This area is equivalent to the toy’s elastic potential energy (EPE) in compression, which, in an energy-conserving system, is equal to the toy’s LKE. The math can be written as the following:
+\begin{equation}
+%KE at launch ≈ EPE ≈ integral(force*displacement) from displacement = 0 to = (displacement) (Eq. 5)
+KE_{launch} \approx EPE \approx \int_0^{\Delta x} F dx.
+\end{equation}
+
+We evaluate the integral once for each ten trials using the displacement of compression in each
+using a trapezoidal sum. Finally, using the Microsoft Excel addon Analysis ToolPak, we ran a two-tailed paired $t$-test to determine whether or not the mean difference in energies is zero to some degree of uncertainty. Data and analysis code are provided at \url{https://github.com/devangel77b/427tchung-lab3}. 
+
+
+
+
+    
 \section{Results}
-The results should deal with ``just the facts'' exactly what you saw or measured, without interpretation. You should include graphs, tables, summary statistics, and results of statistical tests here. The key thing here is that you are reporting truthfully what you saw as just the facts; people may differ on the interpretations but results ought to be taken at face value unless your methods are flawed. Figures and tables must be numbered and must be referred to in the text. 
-
-An example of a figure is \cref{fig:foo}. Note that the figure reference name must begin with \texttt{fig:} in order for the \LaTeX cleveref macros to properly parse it. 
-\begin{figure}
-\begin{center}
-%Image file would go here 
-% \includegraphics{figures/fig1.png}
-\includegraphics{figures/newfig1.pdf}
-% \includesvg{figures/fig2.svg}
-\end{center}
-\caption{This is a caption. Captions for figures go below the figure.}
-\label{fig:foo}
-\end{figure}
-    
-An example of a table is \cref{tab:bar}. 
 \begin{table}
-\begin{center}
-\begin{ruledtabular}
-\begin{tabular}{cc}
-$x$ & $\bar{x}$ \\
-\colrule
-0 & 1 \\ 
-1 & 0 \\
-\end{tabular}
-\end{ruledtabular}
-\end{center}
-\caption{This is a table. Captions for tables go above the table.}
-\label{tab:bar}
+\caption{Two trials of measuring spring force (\unit{\newton}) and displacement (\unit{\meter})}
+\label{tab:1}
 \end{table}
-    
-    
-    
-    
-    
-\section{Discussion}
-The discussion is where you interpret the meaning of your results and whether they support your hypotheses or refute alternative hypotheses. You should refer to tables, figures, etc by number and use them in supporting your arguments here. To refer to a figure do like this: \cref{fig:foo} shows the third Zonklar moment as a function of $t$. To refer to a table like \cref{tab:bar}, do like this. 
 
-    
-    
-    
-    
-    
+\begin{figure}
+\caption{$F$ vs. $x$ with two force data points per displacement indicating a replicate trial. Popper snap-through instability is visualized with a decrease in spring force around \qty{0.025}{\meter}.}
+\label{fig:2}
+\end{figure}
+
+As described in \cref{sec:methods}, the area under the $F$ vs. $x$ curve was calculated for each compression displacement of the ten trials using a trapezoidal sum, which yielded the LKE values that were inputted into \cref{tab:2}.
+
+\begin{table}
+\caption{KE, PE, and the differences}
+\label{tab:2}
+\end{table}
+
+\begin{table}
+\caption{Mean and standard deviation of KE, PE, and KE-PE}
+\label{tab:3}
+\end{table}
+
+A two-tailed paired $t$-test using values from \cref{tab:3} yielded a $p=\num{3e-6}$.
+
+
+
+
+
+
+
+
+
+
+
+\section{Discussion}
+
+\subsection{Interpretation}
+The goal of this experiment was to test the law of energy conservation using a toy popper. Overall, we were unable to accurately present this law. We wrote this lab with the intention of showing that the mean difference in LKE and GPE would not significantly differ from zero, since that would be an effective representation of the law. Our statistical test, however, yielded a $p$-value of $p=\num{3e-6}$, a value far below any common significance level, meaning that there is a significant difference between the LKE and GPE. Since the difference between LKE and GPE was positive across each trial, we have a potential indicator that there were non-conservative forces acting on the toy which resulted in energy dissipation as it ascended. Something like air resistance may have applied negative work on the system, dissipating energy and reducing the amount that can be converted into GPE \cite{tipler,barrons,openstax}.
+
+\subsection{Sources of experimental error}
+The human eye being unable to look at two places simultaneously may have been a potential confounding variable. When recording the height of the toy, we had to look at the toy scanning for when it would approximately have zero speed in the air. We would then quickly look at the meter stick taking that height to account. This height may have been overestimated or underestimated depending on when the person watching the toy looked at the connected meter sticks on the right. We took 10 trials and averaged this out on purpose to try and avoid this, however it most likely still affected our results. Another potential source of error is ignoring air drag, which likely went against the object’s motion; failure to account for this may provide an underestimate of the total energy in the system.
+
+
+
+
+
+
     
     
 \section{Acknowledgements}
-Keep it short or the editors will shorten it for you. JL wrote and PM wrote the lyrics. GH contributed rhythm guitar tracks. RS contributed drumbeats. Do not write long essays about Ms Komitas, Dr E, or the S\&E program here; we don't need or want fluff. 
-
-
-
-% References – Do not spend too much time trying to perfectly format per MLA or whatever because journals often have their own preferred formats; as long as you have author, title, journal, year, volume, page number it will be findable. Peer reviewed journals or published work only; Food Girl’s Blog is not a peer reviewed journal; Wikipedia is not a peer reviewed journal; Webster’s Dictionary is not necessary in a scientific journal article. If I find fake references your paper will be rejected. 
+We thank the Science and Engineering faculty of Manalapan High School for providing us the means to conduct our experimental research. JP was responsible for data collection, OA wrote the abstract and interpreted the results, MB wrote the lab setup and created diagrams to represent it, TC wrote the introduction and the results of the experiment.
 
 
 
 
 
 
-\bibliography{example.bib}
+\bibliography{lab.bib}
 %References
-%[1] P.A. Tipler and G. Mosca. Physics for Scientists and Engineers, 5th ed. (W H Freeman and Company, New York, 2004).
-%
-%“De Caelo : Aristotle : Free Download, Borrow, and Streaming : Internet Archive.” Internet Archive, 2026, archive.org/details/decaelo00aris. Accessed 12 Jan. 2026.
-%
-%Galilei, G. Dialogues Concerning Two New Sciences (1638).
-%
-%Chazot, Christophe. FizziQ. 5.0.4, Trapèze. Digital, 2025, Apple App Store.
-
+%[1]“Conservation of Energy - University Physics Volume 1 - OpenStax,” Openstax.org, 2016.
+%https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy
+%[2]“7.2 Kinetic Energy - University Physics Volume 1 | OpenStax,” openstax.org.
+%https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy
+%[3]“2.7 Falling Objects - College Physics 2e | OpenStax,” openstax.org.
+%https://openstax.org/books/college-physics-2e/pages/2-7-falling-objects
 
 \end{document}
