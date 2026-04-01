@@ -132,9 +132,34 @@ using a trapezoidal sum. Finally, using the Microsoft Excel addon Analysis ToolP
 \begin{table}
 \caption{Two trials of measuring spring force (\unit{\newton}) and displacement (\unit{\meter})}
 \label{tab:1}
+\begin{center}
+\begin{tabular}{cc}
+displacement, \unit{\meter} & spring force, \unit{\newton} \\
+\colrule
+0 & 0 \\
+0.005 & 1.442 \\
+0.005 & 1.501 \\
+0.010 & 2.816 \\
+0.010 & 2.953 \\
+0.015 & 4.239 \\
+0.015 & 4.374 \\
+0.020 & 5.778 \\
+0.020 & 5.603 \\
+0.025 & 7.770 \\
+0.025 & 7.565 \\
+0.030 & 6.710 \\
+0.030 & 6.889 \\
+0.035 & 5.374 \\
+0.035 & 5.943 
+\end{tabular}
+\end{center}
 \end{table}
 
 \begin{figure}
+\begin{center}
+% PLACEHOLDER
+\includesvg[width=\columnwidth]{fig1.svg}
+\end{center}
 \caption{$F$ vs. $x$ with two force data points per displacement indicating a replicate trial. Popper snap-through instability is visualized with a decrease in spring force around \qty{0.025}{\meter}.}
 \label{fig:2}
 \end{figure}
@@ -144,11 +169,19 @@ As described in \cref{sec:methods}, the area under the $F$ vs. $x$ curve was cal
 \begin{table}
 \caption{KE, PE, and the differences}
 \label{tab:2}
+\begin{center}
+% PLACEHOLDER
+\includegraphics[width=\columnwidth]{tables/table2.png}
+\end{center}
 \end{table}
 
 \begin{table}
 \caption{Mean and standard deviation of KE, PE, and KE-PE}
 \label{tab:3}
+\begin{center}
+% PLACEHOLDER
+\includegraphics[width=\columnwidth]{tables/statistics.png}
+\end{center}
 \end{table}
 
 A two-tailed paired $t$-test using values from \cref{tab:3} yielded a $p=\num{3e-6}$.
