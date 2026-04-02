@@ -133,9 +133,10 @@ using a trapezoidal sum. Finally, using the Microsoft Excel addon Analysis ToolP
 \caption{Two trials of measuring spring force (\unit{\newton}) and displacement (\unit{\meter})}
 \label{tab:1}
 \begin{center}
+\begin{ruledtabular}
 \begin{tabular}{cc}
 displacement, \unit{\meter} & spring force, \unit{\newton} \\
-\colrule
+\colrule \\
 0 & 0 \\
 0.005 & 1.442 \\
 0.005 & 1.501 \\
@@ -152,6 +153,7 @@ displacement, \unit{\meter} & spring force, \unit{\newton} \\
 0.035 & 5.374 \\
 0.035 & 5.943 
 \end{tabular}
+\end{ruledtabular}
 \end{center}
 \end{table}
 
@@ -171,20 +173,45 @@ As described in \cref{sec:methods}, the area under the $F$ vs. $x$ curve was cal
 \label{tab:2}
 \begin{center}
 % PLACEHOLDER
-\includegraphics[width=\columnwidth]{tables/table2.png}
+%\includegraphics[width=\columnwidth]{tables/table2.png}
+\begin{ruledtabular}
+\begin{tabular}{cccccc}
+trial & $x$, \unit{\meter} & $LKE$, \unit{\joule} & $h$, \unit{\meter} & $GPE$, \unit{\joule} & $LKE-GPE$, \unit{\joule} \\
+\colrule\\
+1 &  0.025  & 0.0940 & 1.02  & 0.0550 & 0.0389\\
+2 &  0.026  & 0.0985 & 1.18  & 0.9637 & 0.0348\\
+3 &  0.024  & 0.0835 & 1.29  & 0.0696 & 0.0139\\
+4 &  0.025  & 0.0909 & 1.13  & 0.0610 & 0.0300\\
+5 &  0.027  & 0.106  & 1.32  & 0.0713 & 0.0347\\
+6 &  0.026  & 0.0985 & 1.14  & 0.0617 & 0.0368\\
+7 &  0.024  & 0.0835 & 1.24  & 0.0672 & 0.0163\\
+8 &  0.025  & 0.0909 & 1.27  & 0.0685 & 0.0224\\
+9 &  0.023  & 0.0764 & 0.91  & 0.0493 & 0.0271\\
+10 & 0.026  & 0.0985 & 1.17  & 0.0630 & 0.0355\\
+\end{tabular}
+\end{ruledtabular}
 \end{center}
 \end{table}
 
 \begin{table}
-\caption{Mean and standard deviation of KE, PE, and KE-PE}
+\caption{Mean and standard deviation of KE, PE, and LKE-GPE, $n=10$. Data from \cref{tab:2}.}
 \label{tab:3}
 \begin{center}
 % PLACEHOLDER
-\includegraphics[width=\columnwidth]{tables/statistics.png}
+%\includegraphics[width=\columnwidth]{tables/statistics.png}
+\begin{ruledtabular}
+\begin{tabular}{lc}
+& mean $\pm$ 1 sd \\
+\colrule\\
+launch kinetic energ, $LKE$, \unit{\joule} & \num{0.092\pm0.009} \\
+max gravitational potential energy, $GPE$, \unit{\joule} & \num{0.063\pm0.007} \\
+difference, $LKE-GPE$, \unit{\joule} & \num{0.029\pm0.009} \\
+\end{tabular}
+\end{ruledtabular}
 \end{center}
 \end{table}
 
-A two-tailed paired $t$-test using values from \cref{tab:3} yielded a $p=\num{3e-6}$.
+A two-tailed paired $t$-test using $LKE-GPE$ values from \cref{tab:2} yielded a $t=10.36$, $df=9$, $p=\num{2.664e-6}$.
 
 
 
