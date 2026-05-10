@@ -20,6 +20,10 @@
 \crefname{table}{Table}{Tables}
 \usepackage{svg}
 \svgpath{{./figures}}
+\makeatletter
+\def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
+
 
 
 
@@ -41,7 +45,8 @@ pdfauthor={Matthew Butch, Omar Ahmadzada, Jacob Pawelek, and Timothy Chung},
 \fancyhf{}
 \fancyhead[C]{Journal of Science \& Engineering \textbf{2}, 83--85 (2026)} % FOR EDITOR ONLY
 \fancyfoot[C]{\thepage}
-\fancyfoot[L]{\scriptsize\copyright\ 2026 Journal of Science \& Engineering, \href{https://creativecommons.org/licenses/by-nc/4.0/}{CC-BY-NC 4.0}}
+%\fancyfoot[L]{\scriptsize\copyright\ 2026 Journal of Science \& Engineering, \href{https://creativecommons.org/licenses/by-nc/4.0/}{CC-BY-NC 4.0}}
+\fancyfoot[L]{\scriptsize\copyright\ 2026 J S\&E \href{https://creativecommons.org/licenses/by-nc/4.0/}{CC-BY-NC 4.0}}
 }
 
 
@@ -57,8 +62,9 @@ pdfauthor={Matthew Butch, Omar Ahmadzada, Jacob Pawelek, and Timothy Chung},
 \email[Contact author: ]{427tchung@frhsd.com}
 \affiliation{Science \& Engineering Magnet Program, \href{https://manalapan.frhsd.com/}{Manalapan High School}, Englishtown, NJ 07726 USA}
 %\date{\today}
-\date{Received x; revised x; accepted x}
-\published{13 May 2026}
+\received{31 January 2026}
+\accepted[accepted~]{30 March 2026}
+\published[published~]{13 May 2026}
 
 \begin{abstract}
 The law of conservation of mechanical energy states that, in an isolated system, mechanical energy remains constant as energy transforms between its kinetic and potential form without loss. This experiment investigates if energy is conserved in a \qty{0.0055}{\kilo\gram} spring-launching toy popper. When compressed, the toy stores elastic potential energy that is then converted to kinetic energy as the toy is released. The kinetic energy is then converted to gravitational potential energy as the toy ascends. A two-tailed paired $t$-test comparing the initial kinetic energy and gravitational potential energy at maximum height across ten repeated trials of the same popper yielded a statistically significant difference from zero. This result appears to suggest that mechanical energy was not fully conserved, but a more likely explanation is that we did not account for the presence of non-conservative forces such as air resistance during launch.
@@ -69,6 +75,7 @@ The law of conservation of mechanical energy states that, in an isolated system,
 \keywords{conservation of energy, mechanical energy, kinetic energy, potential energy, popper}
 
 \maketitle\thispagestyle{mytitlepage}
+\blfootnote{\\\emph{Published by the Journal of Science \& Engineering under the terms of the \href{https://creativecommons.org/licenses/by-nc/4.0/}{Creative Commons Attribution-NonCommercial 4.0 International} license. Further distribution of this work must maintain attribution to the author(s) and the published article's title, journal citation, and DOI.}}
 
 
 
