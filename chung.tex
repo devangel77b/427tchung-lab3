@@ -85,19 +85,19 @@ The law of conservation of mechanical energy states that, in an isolated system,
 %The current column width is \the\columnwidth
 
 \section{Introduction}
-The energy of motion, first introduced to describe the collision of two moving objects, is known as kinetic energy \cite{tipler,barrons,openstax}. This directionless, or scalar, quantity, is expressed in terms of mass $m$ and velocity $v$ and is given by
+The energy associated with the motion of a mass $m$ moving at velocity $v$ is known as kinetic energy \cite{tipler,barrons,openstax}. This directionless, or scalar, quantity, is given by
 \begin{equation}
 %KE=1/2mv^2 (Eq. 1)
 KE = \frac{1}{2} m v^2.
 \label{eq:1}
 \end{equation}
-The energy associated with an object’s position within a conservative force field is known as its potential energy, which is given by the negative of the work exerted by the a force, or
+The energy associated with an object’s position within a conservative force field is known as its potential energy, which is given by the negative of the work exerted by the a force, or \cite{tipler,barrons,openstax}
 \begin{equation}
 %PE=-integral(f*dr) (Eq. 2)
 PE = -\int \vec{F}\cdot d\vec{r}.
 \label{eq:2}
 \end{equation}
-The gravitational force exerted on objects near Earth’s surface has a downward direction with a magnitude of $mg$. Here, we’ll assume that upward vertical displacement $y$ is positive, so total displacement comes from initial point $y=0$ to final position $y=h$. We use this information to calculate the gravitational potential energy of an object, given by
+The gravitational force exerted on objects near Earth’s surface has a downward direction with a magnitude of $mg$, where $g=\qty{9.8}{\meter\per\second\squared}$ at Earth's surface \cite{tipler,barrons,openstax}. Here, we’ll assume that upward vertical displacement $y$ is positive, so total displacement comes from initial point $y=0$ to final position $y=h$. We use this information to calculate the gravitational potential energy of an object, given by
 \begin{equation}
 GPE = - \int_0^h (-mg) dy,
 \label{eq:3}
@@ -108,11 +108,10 @@ GPE = mgh.
 \label{eq:4}
 \end{equation}
 
-A system’s total mechanical energy $E$ is given by the sum of its kinetic energy and potential energy. The law of energy conservation states that this sum will remain constant unless external forces do work on the system \cite{tipler,barrons,openstax}. Based on this law, we set up a vertical launch system where energy changes between different forms as some object rises against gravity. In this system, the initial kinetic energy of an object as it rises should be equivalent to its potential energy at the time the object reaches its maximum height and comes to a brief rest. Realistically, mechanical energy may not appear fully conserved in this system due to systemic deficits like air resistance and energy dissipation into heat and sound which may be unaccounted for. These factors arise since air molecules apply negative work on the system and the popper is not perfectly elastic \cite{collegephysics}. 
+A system’s total mechanical energy $E$ is given by the sum of its kinetic energy and potential energy. The law of energy conservation states that this sum will remain constant unless external forces do work on the system \cite{tipler,barrons,openstax}. Based on this law, we set up a vertical launch system where energy changes between different forms as some object rises against gravity. In this system, the initial kinetic energy of an object as it rises should be equivalent to its potential energy at the time the object reaches its maximum height and comes to a brief rest. Realistically, mechanical energy may not appear fully conserved in this system, due to losses not directly accounted for in our measurements, such as air resistance, energy dissipation into heat and sound, and inelastic behavior of the popper material \cite{urone:2022:college}. 
 
-While these system energy losses cannot be accounted for with replication, we took ten trials of the same popper and evaluated the difference between energies in each trial. We establish the following:
-%H0: the mean difference will be zero, consistent with energy conservation (mu d = 0)
-%Ha: the mean difference will not be zero, inconsistent with energy conservation (mu d !=0)    
+%While these system energy losses cannot be accounted for with replication, 
+To test if energy is conserved, we took ten trials of the same popper and evaluated the difference between energies in each trial. We hyothesize that either the mean difference will be zero, consistent with energy conservation ($H_0$); or that the mean difference will not be zero, inconsistent with energy conservation ($H_a$). The latter could also result from not accounting for all possible loss mechanisms in our measurements. 
 
 
 
@@ -124,18 +123,17 @@ While these system energy losses cannot be accounted for with replication, we to
 
 \section{Methods and materials}\label{sec:methods}
 
-To begin our investigation on energy conservation, we first measured the mass of a single toy popper (Liberty Imports, USA) to be \qty{0.0055}{\kilo\gram} using a balance scale (Arboleaf, Model CK10l). Then, we stacked two meter sticks and pinned them against a wall so that we could properly measure up to two meters high. We also set up an iPhone 13 (Apple Inc; Cupertino, CA) parallel to the rulers to record our experimentation at 60FPS. We began collecting data by compressing the toy roughly \qty{0.025}{\meter}, as further compression would result in the toy snapping through, and then releasing it. After, we replayed the video to capture the greatest height of the toy and enter it into a table. This process was repeated for ten trials to account for random variation.
+To begin our investigation on energy conservation, we first measured the mass of a single toy popper (Liberty Imports, USA) to be \qty{0.0055}{\kilo\gram} using a balance scale (Model CK10I; Arboleaf; Plano, TX). Then, we stacked two meter sticks and pinned them against a wall as a scale reference. We also set up an iPhone 13 (Apple Inc; Cupertino, CA) parallel to the rulers to record our experimentation at \qty{60}{frame\per\second}. We began collecting data by compressing the popper roughly \qty{0.025}{\meter}, as further compression would result in the toy snapping through, and then releasing it. After, we replayed the video to capture the greatest height of the toy and enter it into a table. This process was repeated for ten trials to account for random variation.
 
-We also collected data for the force applied on the toy as its compression displacement increased. First, we placed a toy onto a balance and then compressed the toy in increments of \qty{0.005}{\meter}, up until the displacement is \qty{0.035}{\meter}. We chose this displacement amount since it would allow us to visualize the drop in force applied on the toy after the snap-through region of the toy is passed. This process was repeated twice because the force-displacement relationship in the popper is relatively consistent and not subject to random variation. For each trial, the mass displayed on the balance would be converted to Newtons and recorded in a force-displacement table.
+We also collected data for the force applied on the popper as its compression displacement increased. First, we placed a popper onto a balance and then compressed the popper in increments of \qty{0.005}{\meter}, up until the displacement is \qty{0.035}{\meter}. We chose this displacement amount since it would allow us to visualize the drop in force applied on the popper after the snap-through region of is passed. This process was repeated twice. For each trial, the mass displayed on the balance was converted to \unit{\newton}, according to $F=mg$, and recorded.
 
-We used \cref{eq:4} to calculate the gravitational potential energy at the peak height of the toy in each of our ten trials. We calculated the launch kinetic energy (LKE) across each ten trials by taking the data from our force-displacement table and creating a force-displacement function, for which we calculated the area under the curve up to the toy’s snap-through region. This area is equivalent to the toy’s elastic potential energy (EPE) in compression, which, in an energy-conserving system, is equal to the toy’s LKE. The math can be written as the following:
+We used \cref{eq:4} to calculate the gravitational potential energy at the peak height of the toy in each of our ten trials. We calculated the launch kinetic energy (LKE) across each ten trials by taking the data from our force-displacement table and creating a force-displacement function, for which we calculated the area under the curve up to the toy’s snap-through region. This area is equivalent to the popper’s elastic potential energy (EPE) in compression, which, in an energy-conserving system, is equal to the toy’s LKE. The math can be written as the following:
 \begin{equation}
 %KE at launch ≈ EPE ≈ integral(force*displacement) from displacement = 0 to = (displacement) (Eq. 5)
-KE_{launch} \approx EPE \approx \int_0^{\Delta x} F dx.
+LKE \approx EPE \approx \int_0^{\Delta x} F dx.
 \end{equation}
 
-We evaluate the integral once for each ten trials using the displacement of compression in each
-using a trapezoidal sum. Finally, using the Microsoft Excel addon Analysis ToolPak, we ran a two-tailed paired $t$-test to determine whether or not the mean difference in energies is zero to some degree of uncertainty. Data and analysis code are provided at \url{https://github.com/devangel77b/427tchung-lab3}. 
+We evaluated the integral once for each ten trials using the displacement of compression in each using a trapezoidal sum. Finally, using the Microsoft Excel addon Analysis ToolPak, we ran a two-tailed paired $t$-test to determine whether or not the mean difference in energies is zero to some degree of uncertainty. Additional analyses were carried out in R \cite{R,ggplot2,dplyr}. Data and analysis code are provided at \url{https://github.com/devangel77b/427tchung-lab3}. 
 
 
 
